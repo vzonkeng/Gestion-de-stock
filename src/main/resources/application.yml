@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: gestionstock
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gestionstock
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 'create' supprime et recrée la base à chaque démarrage
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+server:
+  port: 8080
+
+
+  #flickr:
+  #apiKey: e6017aef7bebeffc113de04efec554b4
+  #apiSecret: a2e10f69ece5c67c
+  #appKey: 72157718699655397-a36ae267891db7e7
+  #appSecret: 04e870e57e18c55b
