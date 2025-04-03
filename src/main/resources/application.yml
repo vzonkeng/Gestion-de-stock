@@ -3,7 +3,7 @@ spring:
     name: gestionstock
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/gestionstock
+    url: jdbc:postgresql://localhost:5432/gestionstock?createDatabaseIfNotExist=true
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
